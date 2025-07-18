@@ -1,0 +1,68 @@
+/* Base layout */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0d0d0d; /* deep black */
+  color: #e0e0e0; /* soft light gray for readability */
+}
+
+/* Header styling */
+header {
+  background-color: #101820; /* near-black with a hint of blue */
+  color: #cce6ff; /* subtle icy blue */
+  text-align: center;
+  padding: 2em 1em;
+  box-shadow: 0 2px 10px rgba(0, 0, 255, 0.1); /* soft blue glow */
+}
+
+/* Profile image */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #1a2a3a; /* muted blue-gray */
+  margin-bottom: 1em;
+}
+
+/* Main content */
+main {
+  padding: 2em;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 2em;
+  background-color: #111111;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.05); /* subtle glow */
+}
+
+/* Headings */
+h2 {
+  color: #3399ff; /* soft blue highlight */
+  border-bottom: 1px solid #1a2a3a;
+  padding-bottom: 0.3em;
+  margin-bottom: 0.8em;
+}
+
+/* Links */
+a {
+  color: #66ccff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Lists */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
