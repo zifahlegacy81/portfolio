@@ -2,76 +2,66 @@ body {
   margin: 0;
   padding: 0;
   background-color: #0d0d0d;
-  color: white;
+  color: #e0e0e0;
   font-family: 'Orbitron', sans-serif;
 }
 
-/* Navigation bar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #101820;
   padding: 1em 2em;
-  background-color: #0d0d0d;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 2em;
+  gap: 1.5em;
   margin: 0;
   padding: 0;
 }
 
-.navbar li a {
-  color: white;
+.navbar a {
+  color: #66ccff;
   text-decoration: none;
-  font-size: 1em;
+  font-weight: bold;
 }
 
-.nav-icons {
-  display: flex;
-  gap: 1em;
-}
-
-.icon {
+.nav-icons .icon {
+  margin-left: 1em;
   font-size: 1.2em;
-  color: white;
+  color: #66ccff;
 }
 
-/* Hero section */
 .hero {
   text-align: center;
-  position: relative;
-  padding: 4em 1em;
-}
-
-.name {
-  font-family: 'Great Vibes', cursive;
-  font-size: 2em;
-  color: #66ccff;
-  margin-bottom: 0.5em;
-}
-
-.title {
-  font-size: 5em;
-  font-weight: bold;
-  margin: 0;
-  color: white;
-  letter-spacing: 0.1em;
+  padding: 3em 1em;
 }
 
 .portrait {
-  width: 220px;
+  width: 200px;
   height: auto;
-  margin-top: 2em;
   border-radius: 50%;
+  margin-bottom: 1em;
 }
 
-/* Footer */
+.name {
+  font-size: 2.5em;
+  margin: 0.2em 0;
+  font-family: 'Great Vibes', cursive;
+  color: #cce6ff;
+}
+
+.tagline {
+  font-size: 1.2em;
+  color: #66ccff;
+}
+
 footer {
-  text-align: right;
-  padding: 1em 2em;
+  text-align: center;
+  padding: 1em;
+  background-color: #101820;
+  color: #999;
   font-size: 0.9em;
-  color: #cccccc;
 }
