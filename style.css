@@ -45,7 +45,7 @@ html {
   align-items: center;
   flex-wrap: nowrap;
   gap: 2em;
-  min-width: 0; /* Fix for Firefox */
+  min-width: 0;
 }
 
 .hero-text {
@@ -59,14 +59,14 @@ html {
 }
 
 .name {
-  font-size: 4.5em; /* Enlarged from 3em */
+  font-size: 4.5em;
   margin: 0.2em 0;
   font-family: 'Great Vibes', cursive;
   color: #cce6ff;
 }
 
 .tagline {
-  font-size: 2.1em; /* Enlarged from 1.4em */
+  font-size: 2.1em;
   color: #66ccff;
 }
 
@@ -83,7 +83,7 @@ html {
   transform: scale(1.03);
 }
 
-/* Mobile Layout */
+/* Responsive Layout */
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column;
@@ -104,6 +104,20 @@ html {
     max-height: 400px;
     width: 80%;
   }
+
+  .achievement {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .achievement-img {
+    max-width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .achievement-text {
+    text-align: left;
+  }
 }
 
 /* Footer */
@@ -115,7 +129,7 @@ footer {
   font-size: 0.9em;
 }
 
-/* About Page Layout */
+/* About Page */
 .about-page {
   padding: 2em;
 }
@@ -133,6 +147,41 @@ footer {
   margin-bottom: 0.5em;
 }
 
+/* Achievement Section */
+.achievement {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 3em;
+  background-color: #111;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 150, 255, 0.1);
+}
+
+.achievement-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(102, 204, 255, 0.2);
+}
+
+.achievement-text {
+  flex: 1;
+  color: #ccc;
+}
+
+.achievement-text h3 {
+  color: #66ccff;
+  margin-bottom: 0.5em;
+}
+
+.achievement-text p {
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+/* Gallery Styles (Optional) */
 .gallery-item {
   text-align: center;
   margin-top: 1em;
@@ -151,7 +200,7 @@ footer {
   margin-top: 0.5em;
 }
 
-/* Contact Page Styles */
+/* Contact Page */
 .contact-page {
   text-align: center;
   padding: 3em 2em;
