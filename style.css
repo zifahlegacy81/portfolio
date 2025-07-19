@@ -44,7 +44,7 @@ html {
   font-weight: bold;
 }
 
-/* Category Navigation Bar (About Page only) */
+/* Category Navigation Bar */
 .category-nav {
   background-color: #111;
   padding: 0.8em 1.5em;
@@ -161,6 +161,11 @@ html {
 
   .achievement-text {
     text-align: left;
+  }
+
+  .category-nav ul {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
