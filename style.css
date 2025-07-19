@@ -34,7 +34,7 @@ html {
   font-weight: bold;
 }
 
-/* Homepage Hero Section */
+/* Hero Section */
 .hero {
   padding: 3em 2em;
 }
@@ -45,16 +45,16 @@ html {
   align-items: center;
   flex-wrap: nowrap;
   gap: 2em;
+  min-width: 0; /* Fix for Firefox */
 }
 
 .hero-text {
-  flex: 1;
+  flex: 1 1 0;
   min-width: 300px;
 }
 
 .hero-image {
-  flex: 1;
-  text-align: center;
+  flex: 0 0 auto;
   min-width: 250px;
 }
 
@@ -64,6 +64,7 @@ html {
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(102, 204, 255, 0.2);
   transition: transform 0.3s ease;
+  flex-shrink: 0; /* Prevent image wrapping in Firefox */
 }
 
 .portrait:hover {
@@ -82,7 +83,7 @@ html {
   color: #66ccff;
 }
 
-/* Responsive Layout for Smaller Screens */
+/* Mobile Layout */
 @media (max-width: 768px) {
   .hero-content {
     flex-direction: column;
@@ -148,4 +149,47 @@ footer {
   font-size: 0.95em;
   color: #cccccc;
   margin-top: 0.5em;
+}
+
+/* Contact Page Styles */
+.contact-page {
+  text-align: center;
+  padding: 3em 2em;
+}
+
+.contact-page h1 {
+  color: #3399ff;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.contact-page p {
+  font-size: 1em;
+  color: #cccccc;
+  margin-bottom: 1em;
+}
+
+.contact-links a {
+  color: #66ccff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-card {
+  margin: 2em auto;
+  padding: 1em;
+  background-color: #101820;
+  border: 1px solid #3399ff;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+.contact-card h3 {
+  color: #3399ff;
+  margin-bottom: 0.5em;
+}
+
+.contact-card a {
+  color: #66ccff;
+  text-decoration: none;
 }
